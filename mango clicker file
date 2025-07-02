@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mijn Scratch Spel</title>
+  <style>
+    html, body {
+      margin: 0; 
+      padding: 0; 
+      height: 100%; 
+      overflow: hidden;
+      background-color: black;
+    }
+    iframe {
+      border: none;
+      width: 100vw;
+      height: 100vh;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <iframe 
+    src="https://scratch.mit.edu/projects/1194095631/embed" 
+    allowtransparency="true" 
+    allowfullscreen>
+  </iframe>
+</body>
+</html>
