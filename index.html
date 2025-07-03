@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mijn Scratch Spel</title>
 
   <!-- Google AdSense script -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1595997797457144"
-     crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
 
   <style>
     body {
@@ -18,6 +18,7 @@
       flex-direction: column;
       align-items: center;
       font-family: sans-serif;
+      min-height: 100vh;
     }
 
     .ad-space {
@@ -32,8 +33,10 @@
     .scratch-container {
       width: 100%;
       max-width: 1000px;
-      aspect-ratio: 4 / 3;
       position: relative;
+      /* Houd 4:3 ratio door padding-bottom */
+      padding-bottom: 75%; /* 3/4 = 75% */
+      height: 0;
     }
 
     .scratch-container iframe {
@@ -43,6 +46,7 @@
       width: 100%;
       height: 100%;
       border: none;
+      display: block;
     }
   </style>
 </head>
@@ -50,15 +54,14 @@
 
   <!-- Advertentieblok boven -->
   <div class="ad-space">
-    <!-- AdSense advertentie -->
     <ins class="adsbygoogle"
-         style="display:block"
-         data-ad-client="ca-pub-1595997797457144"
-         data-ad-slot="1069632915"
-         data-ad-format="auto"
-         data-full-width-responsive="true"></ins>
+      style="display:block"
+      data-ad-client="ca-pub-1595997797457144"
+      data-ad-slot="1069632915"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
     <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
+      (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
   </div>
 
@@ -69,8 +72,7 @@
       allowtransparency="true"
       allowfullscreen
       scrolling="no"
-      frameborder="0">
-    </iframe>
+      frameborder="0"></iframe>
   </div>
 
 </body>
