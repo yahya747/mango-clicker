@@ -14,10 +14,10 @@
       margin: 0;
       padding: 0;
       background-color: #000;
+      font-family: sans-serif;
       display: flex;
       flex-direction: column;
       align-items: center;
-      font-family: sans-serif;
       min-height: 100vh;
     }
 
@@ -33,20 +33,21 @@
     .scratch-container {
       width: 100%;
       max-width: 1000px;
-      position: relative;
-      /* Houd 4:3 ratio door padding-bottom */
-      padding-bottom: 75%; /* 3/4 = 75% */
-      height: 0;
+      /* Houd de verhoudingen vast met viewport hoogte */
+      height: 75vh; /* ongeveer 4:3 ratio, maar responsive */
     }
 
     .scratch-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
       height: 100%;
       border: none;
       display: block;
+    }
+
+    @media (max-width: 600px) {
+      .scratch-container {
+        height: 60vh; /* iets kleiner op mobiel */
+      }
     }
   </style>
 </head>
