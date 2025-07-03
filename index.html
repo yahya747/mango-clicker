@@ -1,6 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mijn Scratch Spel</title>
 
   <!-- Google AdSense script -->
@@ -8,54 +10,68 @@
      crossorigin="anonymous"></script>
 
   <style>
-    html, body {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      overflow: hidden;
-      background-color: black;
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: sans-serif;
     }
 
     .ad-space {
       width: 100%;
-      text-align: center;
+      max-width: 1000px;
+      margin: 10px 0;
       background-color: #fff;
-      position: absolute;
-      top: 0;
-      z-index: 9999;
+      text-align: center;
+      padding: 10px 0;
     }
 
-    iframe {
+    .scratch-container {
+      width: 100%;
+      max-width: 1000px;
+      aspect-ratio: 4 / 3;
+      position: relative;
+    }
+
+    .scratch-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       border: none;
-      width: 100vw;
-      height: 100vh;
-      display: block;
     }
   </style>
 </head>
 <body>
 
-  <!-- Advertentieblok bovenaan -->
+  <!-- Advertentieblok boven -->
   <div class="ad-space">
+    <!-- AdSense advertentie -->
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-client="ca-pub-1595997797457144"
-         data-ad-slot="1234567890"
+         data-ad-slot="1069632915"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
     <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
+         (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
   </div>
 
-  <!-- Scratch game -->
-  <iframe 
-    src="https://scratch.mit.edu/projects/1194095631/embed"
-    allowtransparency="true"
-    frameborder="0"
-    scrolling="no"
-    allowfullscreen>
-  </iframe>
+  <!-- Scratch Game -->
+  <div class="scratch-container">
+    <iframe
+      src="https://scratch.mit.edu/projects/1194095631/embed"
+      allowtransparency="true"
+      allowfullscreen
+      scrolling="no"
+      frameborder="0">
+    </iframe>
+  </div>
 
 </body>
 </html>
