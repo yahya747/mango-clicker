@@ -2,14 +2,29 @@
 <html>
 <head>
   <title>Mijn Scratch Spel</title>
+
+  <!-- Google AdSense script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1595997797457144"
+     crossorigin="anonymous"></script>
+
   <style>
     html, body {
-      margin: 0; 
-      padding: 0; 
-      height: 100%; 
+      margin: 0;
+      padding: 0;
+      height: 100%;
       overflow: hidden;
       background-color: black;
     }
+
+    .ad-space {
+      width: 100%;
+      text-align: center;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      z-index: 9999;
+    }
+
     iframe {
       border: none;
       width: 100vw;
@@ -19,10 +34,28 @@
   </style>
 </head>
 <body>
+
+  <!-- Advertentieblok bovenaan -->
+  <div class="ad-space">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-1595997797457144"
+         data-ad-slot="1234567890"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  </div>
+
+  <!-- Scratch game -->
   <iframe 
-    src="https://scratch.mit.edu/projects/1194095631/embed" 
-    allowtransparency="true" 
+    src="https://scratch.mit.edu/projects/1194095631/embed"
+    allowtransparency="true"
+    frameborder="0"
+    scrolling="no"
     allowfullscreen>
   </iframe>
+
 </body>
 </html>
